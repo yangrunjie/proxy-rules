@@ -1,0 +1,145 @@
+# 默认学术网站清单；用户点名的域名可以在执行时追加
+google_scholar_proxy:
+  - scholar.google.com
+
+direct_domains:
+  # 文献检索、引文数据库与学术索引
+  - webofscience.com
+  - clarivate.com
+  - isiknowledge.com
+  - newisiknowledge.com
+  - scopus.com
+  - engineeringvillage.com
+  - ebscohost.com
+  - proquest.com
+  - jstor.org
+  - gale.com
+  - galegroup.com
+  - cabdirect.org
+  - knovel.com
+  - ovid.com
+  - ncbi.nlm.nih.gov
+  - europepmc.org
+  - crossref.org
+  - doi.org
+  - semanticscholar.org
+  - researchgate.net
+  - arxiv.org
+  - biorxiv.org
+  - medrxiv.org
+  - cqvip.com
+
+  # 学术出版社与期刊平台
+  - ieee.org
+  - aip.org
+  - acm.org
+  - acs.org
+  - aps.org
+  - aiaa.org
+  - ascelibrary.org
+  - asme.org
+  - annualreviews.org
+  - springer.com
+  - springerlink.com
+  - springernature.com
+  - nature.com
+  - elsevier-ae.com
+  - elsevier.com
+  - elsevier.io
+  - els-cdn.com
+  - sciencedirect.com
+  - sciencedirectassets.com
+  - wiley.com
+  - tandfonline.com
+  - taylorandfrancis.com
+  - tandf.co.uk
+  - sagepub.com
+  - cambridge.org
+  - oup.com
+  - rsc.org
+  - iop.org
+  - scitation.org
+  - spiedigitallibrary.org
+  - optica.org
+  - osapublishing.org
+  - science.org
+  - sciencemag.org
+  - cell.com
+  - pnas.org
+  - bmj.com
+  - nejm.org
+  - plos.org
+  - frontiersin.org
+  - mdpi.com
+  - biomedcentral.com
+  - hindawi.com
+  - emerald.com
+  - degruyter.com
+  - brill.com
+  - royalsocietypublishing.org
+  - siam.org
+  - karger.com
+  - liebertpub.com
+  - cnki.net
+  - cnki.com.cn
+  - wanfangdata.com
+  - wanfangdata.com.cn
+
+  # 常用出版社全文入口；这些入口常由高校公网 IP 或机构订阅授权
+  - ieeexplore.ieee.org
+  - computer.org
+  - dl.acm.org
+  - link.springer.com
+  - onlinelibrary.wiley.com
+  - pubs.aip.org
+  - pubs.acs.org
+  - journals.aps.org
+  - pubs.rsc.org
+  - iopscience.iop.org
+  - academic.oup.com
+  - journals.sagepub.com
+  - asmedigitalcollection.asme.org
+  - opg.optica.org
+  - arc.aiaa.org
+  - journals.lww.com
+  - jamanetwork.com
+  - thelancet.com
+  - cochranelibrary.com
+  - projecteuclid.org
+  - muse.jhu.edu
+  - worldscientific.com
+  - content.iospress.com
+  - igi-global.com
+
+# 国内高校网站根域。后缀匹配会覆盖官网、研究生院、研招网和校内服务子域名
+  - edu.cn
+  - hit.edu.cn
+  - hrbeu.edu.cn
+
+# 用户明确要求全部国内高校网站直连时，额外启用该广泛后缀；只点名学校时不要启用
+broad_domestic_university_suffixes:
+  - edu.cn
+
+# WOS/Clarivate 或高校网站需要完全绕过系统代理时使用；不影响 Google Scholar 代理
+system_proxy_bypass_domains:
+  - webofscience.com
+  - "*.webofscience.com"
+  - clarivate.com
+  - "*.clarivate.com"
+  - edu.cn
+  - "*.edu.cn"
+
+# 已核对的高校官方站点示例，供生成适配规则时审计
+domestic_university_examples:
+  hit:
+    root: hit.edu.cn
+    official_sites:
+      - www.hit.edu.cn
+      - hitgs.hit.edu.cn
+      - yzb.hit.edu.cn
+  hrbeu:
+    root: hrbeu.edu.cn
+    official_sites:
+      - www.hrbeu.edu.cn
+      - yjsy.hrbeu.edu.cn
+      - yjs.hrbeu.edu.cn

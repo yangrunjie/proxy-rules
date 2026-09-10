@@ -1,0 +1,7 @@
+interface:
+  display_name: "代理规则"
+  short_description: "跨代理软件配置学术与国内高校直连，并保留 Google Scholar 代理"
+  default_prompt: "使用 $proxy-rules，把学术网站和国内高校 edu.cn 域名设为持久化直连，同时保持 Google Scholar 走代理。"
+
+policy:
+  allow_implicit_invocation: true
